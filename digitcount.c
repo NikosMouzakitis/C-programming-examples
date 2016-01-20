@@ -15,7 +15,7 @@
  
   int main(int argc, char *argv[])
   {
-      int number, ccfras=0;
+      int number ;
  
       printf("Calculating the digits of a given number.\n");
       printf("\n");

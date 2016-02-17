@@ -19,17 +19,17 @@ int main(int argc,char *argv[])
         }
         else if( childpid == 0)
         {
-                while(a1 < LMT)
-                        printf("Process %d : %d \n",(int)getpid(),a1++);
+                while(a1 < 10)
+                        printf("Child_Process %d : %d \n",(int)getpid(),a1++);
                 printf("Process %d completed.\n",(int)getpid());
                 return(0);
         }
 
         else if( childpid > 0)
         {
-                while(a2 < LMT)
+                while(a2 < 10)
                         printf("Process %d : %d \n",(int)getpid(),a2++);
-                printf("Process %d completed.\n",(int)getpid());
+                printf("Parent_Process %d completed.\n",(int)getpid());
                 return (0);
         }
 
